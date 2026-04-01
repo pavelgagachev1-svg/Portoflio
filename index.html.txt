@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Павел Гагачев | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="pavel-main-header">
+        <div class="nav-container-flex">
+            <div class="p-logo">P</div>
+            <ul class="nav-links-stack">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><button class="header-contact-btn">Contact Me</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main-page-wrapper">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+
+        <section id="home" class="hero-intro-section">
+            <div class="hero-content-box">
+                <div class="brown-accent-line"></div>
+                <div class="hero-text">
+                    <h1>Hi, I'm Pavel Gagachev<br><span class="ux-title">Aspiring UX/UI Designer</span></h1>
+                    <p>After 4.5 years as a waiter, serving and getting to know people around my town everyday, I learned how people think and feel. Now i turn that empathy into design.</p>
+                    <div class="hero-btn-row">
+                        <a href="#projects" class="btn-sage">View my work</a>
+                        <a href="#about" class="btn-tan">About me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="portrait-frame">
+                    <img src="pavel.png" alt="Pavel Gagachev">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-me-section">
+            <div class="section-title-wrap">
+                <h2 class="title-text">About me</h2>
+            </div>
+            <div class="about-row">
+                <div class="about-img-box">
+                    <img src="waiter.png" alt="Hospitality Experience">
+                </div>
+                <div class="about-copy">
+                    <p>• По 4.5 години во директна работа со луѓе, стекнав длабоко разбирање за нивните потреби и начинот на размислување. Сега таа емпатија е мојата најсилна алатка за создавање дизајни кои решаваат вистински проблеми.</p>
+                </div>
+            </div>
+            <div class="about-row reverse">
+                <div class="about-copy">
+                    <p>• Верувам дека добриот дизајн доаѓа од темелна работа. Мојата работа е заснована на User Research, детално Прототипирање и тестирање, осигурувајќи дека секоја одлука е кориснички центрична.</p>
+                </div>
+                <div class="about-img-box diagram">
+                    <img src="process.png" alt="Design Thinking Process">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-display-area">
+            <div class="section-title-wrap">
+                <h2 class="title-text">Projects</h2>
+            </div>
+            <div class="project-cards-grid">
+                <div class="p-card">
+                    <img src="bus-app.png" alt="Public Transport">
+                    <h3>МОБИЛНА АПЛИКАЦИЈА ЗА ЈАВЕН ПРЕВОЗ</h3>
+                    <p>Redesign: Мобилна Апликација за Јавен Превоз (Скопје/Битола)</p>
+                    <button class="btn-tan small">View Project</button>
+                </div>
+                <div class="p-card">
+                    <img src="eco-task.png" alt="EcoTask">
+                    <h3>"EcoTask" - Апликација за Еко Свесност</h3>
+                    <p>Дизајнирање на апликација која ги мотивира корисниците да усвојат еколошки навики.</p>
+                    <button class="btn-tan small">View Project</button>
+                </div>
+                <div class="p-card">
+                    <img src="carpentry.png" alt="Local Business">
+                    <h3>Веб-страна за локален занаетчија</h3>
+                    <p>Креирање на модерна е-трговија веб-страна за мал бизнис.</p>
+                    <button class="btn-tan small">View Project</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="edu-layout-box">
+            <div class="section-title-wrap">
+                <h2 class="title-text">Education</h2>
+            </div>
+            <div class="edu-row">
+                <div class="edu-card">
+                    <img src="school.png" alt="School">
+                    <h3>Аналитичка основа</h3>
+                    <p>Моите вештини за критичко размислување и решавање на комплексни проблеми се изградени во Гимназија „Јосип Броз Тито“ во Битола.</p>
+                    <button class="btn-tan small">View School</button>
+                </div>
+                <div class="edu-card">
+                    <div class="logo-box"><img src="brainster.png" alt="Brainster"></div>
+                    <h3>Специјализирана обука</h3>
+                    <p>Моментално ги претворам тие аналитички вештини во практични дизајнерски решенија преку UX/UI Дизајн Академијата на Brainster.</p>
+                    <button class="btn-tan small">View School</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-form-block">
+            <div class="section-title-wrap">
+                <h2 class="title-text">Contact me</h2>
+            </div>
+            <p class="contact-subtitle">Имате проект на ум, прашање или само сакате да се поздравите? Ве молам слободно контактирајте ме.</p>
+            <div class="contact-main-flex">
+                <div class="contact-info-list">
+                    <div class="info-item"><span>🏠</span> Adress: Visit my office</div>
+                    <div class="info-item"><span>📞</span> Phone: +38975230399</div>
+                    <div class="info-item"><span>✉️</span> Email: pavelgagachev1@gmail.com</div>
+                </div>
+                <form id="pavel-form-logic" class="message-card">
+                    <h3>Send Message</h3>
+                    <div class="input-wrap">
+                        <input type="text" id="v-name" placeholder="Full Name |" required>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="email" id="v-email" placeholder="Email |" required>
+                    </div>
+                    <div class="input-wrap">
+                        <textarea id="v-msg" placeholder="Type your message |" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-sage large">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bottom-pill-section">
+        <div class="pill-bar">
+            <button class="btn-sage">Reach out to me</button>
+            <p>I'd love to hear from you!</p>
+            <div class="footer-icons">
+                <div class="f-icon">📍 Visit my office</div>
+                <div class="f-icon">✉️ pavelgagachev1@gmail.com</div>
+                <div class="f-icon">📞 +38975230399</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

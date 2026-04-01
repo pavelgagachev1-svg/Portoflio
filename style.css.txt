@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #f6f7f2;
+    --sage: #80946E;
+    --tan: #E5D3B7;
+    --brown: #745C3A;
+    --black: #1a1a1a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* BACKGROUND CIRCLES */
+.bg-circle {
+    position: absolute;
+    background-color: #efede4;
+    border-radius: 50%;
+    z-index: -1;
+}
+.circle-1 { width: 300px; height: 300px; top: 10%; left: 30%; }
+.circle-2 { width: 400px; height: 400px; top: 60%; right: -5%; }
+
+/* NAV */
+.pavel-main-header {
+    padding: 30px 5%;
+}
+.nav-container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.p-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+.nav-links-stack {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+.nav-links-stack a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+}
+.header-contact-btn {
+    background: var(--tan);
+    border: 1.5px solid var(--brown);
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero-intro-section {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 5%;
+    gap: 40px;
+}
+.hero-content-box {
+    flex: 1;
+    display: flex;
+    gap: 30px;
+}
+.brown-accent-line {
+    width: 6px;
+    background-color: var(--brown);
+    height: 350px;
+}
+.hero-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.ux-title {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.hero-text p {
+    font-size: 1.1rem;
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+.hero-btn-row {
+    display: flex;
+    gap: 20px;
+}
+.btn-sage {
+    background: var(--sage);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+.btn-tan {
+    background: var(--tan);
+    color: var(--black);
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.portrait-frame {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 1.5px solid var(--brown);
+    overflow: hidden;
+    background: #c2ba9e;
+}
+.portrait-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ABOUT SECTION */
+.about-me-section, .projects-display-area, .edu-layout-box, .contact-form-block {
+    padding: 80px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-title-wrap {
+    text-align: right;
+    margin-bottom: 60px;
+}
+.title-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #6a7c5a;
+    display: inline-block;
+    border-bottom: 3px solid var(--brown);
+    padding-bottom: 10px;
+}
+.about-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+.about-row.reverse { flex-direction: row-reverse; }
+.about-img-box {
+    flex: 1;
+    border: 2px solid var(--brown);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 300px;
+}
+.about-img-box img { width: 100%; height: 100%; object-fit: cover; }
+.about-copy { flex: 1; font-size: 1.2rem; }
+
+/* PROJECTS */
+.project-cards-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.p-card {
+    background: white;
+    padding: 20px;
+    border: 2px solid #ccd2c4;
+    border-radius: 20px;
+    flex: 1;
+    text-align: center;
+}
+.p-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.p-card h3 { font-size: 1rem; margin-bottom: 10px; }
+.p-card p { font-size: 0.9rem; margin-bottom: 20px; color: #555; }
+.btn-tan.small { padding: 10px 20px; font-size: 14px; }
+
+/* EDUCATION */
+.edu-row {
+    display: flex;
+    gap: 30px;
+}
+.edu-card {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border: 2.5px solid var(--brown);
+    border-radius: 20px;
+    text-align: center;
+}
+.edu-card img { width: 100%; height: 250px; object-fit: cover; margin-bottom: 30px; border-radius: 15px; }
+.logo-box { height: 250px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 2rem; margin-bottom: 30px;}
+
+/* CONTACT FORM */
+.contact-subtitle { text-align: center; margin-bottom: 50px; font-weight: 600; }
+.contact-main-flex { display: flex; gap: 80px; }
+.contact-info-list { flex: 1; display: flex; flex-direction: column; gap: 30px; }
+.info-item { display: flex; align-items: center; gap: 20px; font-size: 1.1rem; }
+.message-card {
+    flex: 1.5;
+    background: var(--tan);
+    padding: 50px;
+    border-radius: 20px;
+    border: 2px solid var(--brown);
+}
+.input-wrap { border-bottom: 1.5px solid black; margin-bottom: 25px; }
+.input-wrap input, .input-wrap textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 10px 0;
+    font-family: inherit;
+    font-size: 1.1rem;
+    outline: none;
+}
+.btn-sage.large { width: 100%; margin-top: 20px; }
+
+/* FOOTER PILL */
+.bottom-pill-section {
+    padding: 0 5% 50px;
+}
+.pill-bar {
+    background: var(--tan);
+    border: 2px solid var(--brown);
+    border-radius: 40px;
+    padding: 25px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-icons { display: flex; gap: 40px; font-size: 0.9rem; font-weight: 600; color: #5c5545; }
+
+@media (max-width: 900px) {
+    .nav-links-stack { display: none; }
+    .hero-intro-section, .about-row, .edu-row, .contact-main-flex, .pill-bar { flex-direction: column; text-align: center; }
+    .about-row.reverse { flex-direction: column; }
+    .portrait-frame { width: 300px; height: 300px; margin: 0 auto; }
+    .brown-accent-line { display: none; }
+    .footer-icons { flex-direction: column; gap: 15px; }
+}
